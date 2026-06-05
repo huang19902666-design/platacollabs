@@ -11,6 +11,14 @@ body{
   font-family: Arial, sans-serif;
   background: linear-gradient(180deg,#120a1f,#1a1233);
   color:#fff;
+  overflow-x:hidden;
+}
+
+/* floating animation */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+  100% { transform: translateY(0px); }
 }
 
 .container{
@@ -80,19 +88,25 @@ h2{
   background: rgba(255,255,255,0.05);
   border:1px solid rgba(255,255,255,0.12);
   transition:0.3s;
+  animation: float 4s ease-in-out infinite;
 }
 
 .card:hover{
   transform: translateY(-6px);
   border-color:#ff9ad5;
+  animation-play-state: paused;
 }
 
+/* 卡通插画图 */
 .card img{
   width:100%;
-  height:180px;
-  object-fit:cover;
+  height:190px;
+  object-fit:contain;
+  background: rgba(255,255,255,0.03);
+  padding:10px;
 }
 
+/* content */
 .card-content{
   padding:14px;
 }
@@ -141,8 +155,8 @@ footer{
     <h2>// ABOUT</h2>
 
     <p style="max-width:750px;color:#e6d9ff;line-height:1.7;">
-      I work in influencer marketing and creator partnerships across US, Germany and Southeast Asia.
-      Focused on TikTok/Digital creators, brand campaigns, and Shopify-based e-commerce projects.
+      Creator marketing & influencer partnerships studio focused on TikTok, Instagram,
+      and global e-commerce growth systems.
     </p>
   </div>
 
@@ -152,27 +166,30 @@ footer{
 
     <div class="grid">
 
+      <!-- Influencer -->
       <div class="card">
-        <img src="https://picsum.photos/seed/influencer/600/400">
+        <img src="https://assets.storyset.com/illustrations/social_influencer.svg">
         <div class="card-content">
           <div class="title">Influencer Marketing</div>
           <div class="text">Creator sourcing, outreach, campaign execution.</div>
         </div>
       </div>
 
+      <!-- Shopify -->
       <div class="card">
-        <img src="https://picsum.photos/seed/shopify/600/400">
+        <img src="https://assets.storyset.com/illustrations/online_shopping.svg">
         <div class="card-content">
           <div class="title">Shopify & E-commerce</div>
-          <div class="text">Store testing, product launch & conversion setup.</div>
+          <div class="text">Store testing, product launch & conversion systems.</div>
         </div>
       </div>
 
+      <!-- AI -->
       <div class="card">
-        <img src="https://picsum.photos/seed/ai/600/400">
+        <img src="https://assets.storyset.com/illustrations/artificial_intelligence.svg">
         <div class="card-content">
-          <div class="title">AI & Growth Systems</div>
-          <div class="text">Automation workflows for marketing efficiency.</div>
+          <div class="title">AI & Automation</div>
+          <div class="text">Marketing workflows and growth automation tools.</div>
         </div>
       </div>
 
@@ -184,12 +201,12 @@ footer{
     <h2>// CONTACT</h2>
 
     <p style="color:#e6d9ff;">
-      Business inquiries: <strong>plata@platacollabs.com</strong>
+      💌 plata@platacollabs.com
     </p>
   </div>
 
   <footer>
-    © 2026 Plata Collabs — Creator Marketing Studio
+    © 2026 Plata Collabs — Creator Marketing Studio ✨
   </footer>
 
 </div>
