@@ -88,7 +88,7 @@ h2{
   background: rgba(255,255,255,0.05);
   border:1px solid rgba(255,255,255,0.12);
   transition:0.3s;
-  animation: float 4s ease-in-out infinite;
+  animation: float 5s ease-in-out infinite;
 }
 
 .card:hover{
@@ -97,13 +97,13 @@ h2{
   animation-play-state: paused;
 }
 
-/* 卡通插画图 */
+/* 卡通图统一风格 */
 .card img{
   width:100%;
-  height:190px;
+  height:200px;
   object-fit:contain;
+  padding:12px;
   background: rgba(255,255,255,0.03);
-  padding:10px;
 }
 
 /* content */
@@ -155,8 +155,8 @@ footer{
     <h2>// ABOUT</h2>
 
     <p style="max-width:750px;color:#e6d9ff;line-height:1.7;">
-      Creator marketing & influencer partnerships studio focused on TikTok, Instagram,
-      and global e-commerce growth systems.
+      Creator marketing studio focused on influencer partnerships, TikTok campaigns,
+      and Shopify-based e-commerce growth across global markets.
     </p>
   </div>
 
@@ -168,28 +168,52 @@ footer{
 
       <!-- Influencer -->
       <div class="card">
-        <img src="https://assets.storyset.com/illustrations/social_influencer.svg">
+        <img src="data:image/svg+xml;utf8,
+        <svg xmlns='http://www.w3.org/2000/svg' width='600' height='400'>
+        <defs>
+        <linearGradient id='g1' x1='0' x2='1'>
+        <stop offset='0%' stop-color='%23ff9ad5'/>
+        <stop offset='100%' stop-color='%23a5a6ff'/>
+        </linearGradient>
+        </defs>
+        <rect width='100%' height='100%' fill='url(%23g1)'/>
+        <circle cx='180' cy='200' r='80' fill='%23ffffff' opacity='0.8'/>
+        <circle cx='420' cy='160' r='60' fill='%23ffffff' opacity='0.5'/>
+        <text x='50%' y='55%' text-anchor='middle' font-size='26' fill='%23222'>Creator</text>
+        </svg>">
         <div class="card-content">
-          <div class="title">Influencer Marketing</div>
-          <div class="text">Creator sourcing, outreach, campaign execution.</div>
+          <div class="title">🌸 Influencer Marketing</div>
+          <div class="text">Creator sourcing, outreach & campaign execution.</div>
         </div>
       </div>
 
       <!-- Shopify -->
       <div class="card">
-        <img src="https://assets.storyset.com/illustrations/online_shopping.svg">
+        <img src="data:image/svg+xml;utf8,
+        <svg xmlns='http://www.w3.org/2000/svg' width='600' height='400'>
+        <rect width='100%' height='100%' fill='%23d6f0ff'/>
+        <circle cx='200' cy='220' r='90' fill='%23ffffff' opacity='0.8'/>
+        <circle cx='420' cy='170' r='70' fill='%23ffd6f0'/>
+        <text x='50%' y='55%' text-anchor='middle' font-size='26' fill='%23222'>Shopify</text>
+        </svg>">
         <div class="card-content">
-          <div class="title">Shopify & E-commerce</div>
-          <div class="text">Store testing, product launch & conversion systems.</div>
+          <div class="title">🧁 Shopify & E-commerce</div>
+          <div class="text">Store testing, product launches & conversion systems.</div>
         </div>
       </div>
 
       <!-- AI -->
       <div class="card">
-        <img src="https://assets.storyset.com/illustrations/artificial_intelligence.svg">
+        <img src="data:image/svg+xml;utf8,
+        <svg xmlns='http://www.w3.org/2000/svg' width='600' height='400'>
+        <rect width='100%' height='100%' fill='%23e6d6ff'/>
+        <circle cx='220' cy='200' r='90' fill='%23ffffff' opacity='0.8'/>
+        <circle cx='420' cy='200' r='60' fill='%237afcff'/>
+        <text x='50%' y='55%' text-anchor='middle' font-size='26' fill='%23222'>AI Flow</text>
+        </svg>">
         <div class="card-content">
-          <div class="title">AI & Automation</div>
-          <div class="text">Marketing workflows and growth automation tools.</div>
+          <div class="title">🧠 AI & Automation</div>
+          <div class="text">Marketing workflows & growth automation systems.</div>
         </div>
       </div>
 
