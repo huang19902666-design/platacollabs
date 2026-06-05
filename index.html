@@ -9,80 +9,78 @@
 body{
   margin:0;
   font-family: "Arial", sans-serif;
-  background: linear-gradient(180deg,#0b0a12,#15102a);
+  background: linear-gradient(180deg,#120a1f,#1b1230);
   color:#fff;
 }
 
 /* 容器 */
 .container{
-  max-width: 1050px;
+  max-width: 1000px;
   margin:auto;
-  padding: 60px 25px;
+  padding: 60px 20px;
 }
 
 /* HERO */
 .hero{
-  padding: 90px 0;
   text-align:left;
+  padding: 80px 0;
 }
 
 h1{
-  font-size: 70px;
+  font-size: 68px;
   margin:0;
-  letter-spacing:-2px;
-  background: linear-gradient(90deg,#ff9ad5,#b8a8ff,#7afcff);
+  background: linear-gradient(90deg,#ff9ad5,#a5a6ff,#7afcff);
   -webkit-background-clip:text;
   -webkit-text-fill-color:transparent;
 }
 
 .sub{
-  margin-top:12px;
-  color:#d7cfe9;
-  font-size:16px;
+  margin-top:10px;
+  color:#e7d9ff;
+  font-size:15px;
 }
 
 .btn{
   display:inline-block;
-  margin-top:22px;
-  padding:10px 18px;
-  border-radius:20px;
-  border:1px solid rgba(255,255,255,0.3);
-  background: rgba(255,255,255,0.05);
+  margin-top:20px;
+  padding:10px 16px;
+  border-radius:999px;
+  background: rgba(255,255,255,0.08);
+  border:1px solid rgba(255,255,255,0.2);
   color:#fff;
   text-decoration:none;
-  backdrop-filter: blur(6px);
 }
 
 .btn:hover{
-  background: rgba(255,255,255,0.15);
+  background: rgba(255,255,255,0.18);
 }
 
 /* section */
 .section{
-  margin-top:80px;
+  margin-top:70px;
 }
 
 h2{
-  font-size:16px;
-  letter-spacing:2px;
+  font-size:14px;
+  letter-spacing:3px;
   color:#ff9ad5;
 }
 
-/* 卡片 */
+/* grid */
 .grid{
   display:grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap:18px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap:16px;
   margin-top:20px;
 }
 
+/* card */
 .card{
-  border-radius:16px;
+  border-radius:18px;
   overflow:hidden;
   background: rgba(255,255,255,0.05);
-  border:1px solid rgba(255,255,255,0.1);
+  border:1px solid rgba(255,255,255,0.12);
   transition:0.3s;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
 }
 
 .card:hover{
@@ -92,33 +90,32 @@ h2{
 
 .card img{
   width:100%;
-  height:200px;
+  height:180px;
   object-fit:cover;
-  filter: saturate(1.2) contrast(1.05);
 }
 
+/* content */
 .card-content{
-  padding:15px;
+  padding:14px;
 }
 
 .title{
-  font-size:15px;
-  margin-bottom:6px;
-  color:#fff;
+  font-size:14px;
+  margin-bottom:5px;
 }
 
 .text{
-  font-size:13px;
-  color:#cdbde6;
+  font-size:12px;
+  color:#d8c7ff;
 }
 
 /* footer */
 footer{
-  margin-top:100px;
-  padding-top:20px;
-  border-top:1px solid rgba(255,255,255,0.1);
+  margin-top:90px;
   font-size:12px;
-  color:#a79cc2;
+  color:#9a8fb3;
+  border-top:1px solid rgba(255,255,255,0.1);
+  padding-top:20px;
 }
 </style>
 
@@ -133,20 +130,21 @@ footer{
     <h1>PLATA COLLABS</h1>
 
     <div class="sub">
-      Creator Marketing · E-commerce · Digital Experiments
+      🌸 Creator Marketing · E-commerce · Cute Digital Experiments
     </div>
 
     <a class="btn" href="mailto:plata@platacollabs.com">
-      ✉ Contact Me
+      💌 Contact Me
     </a>
   </div>
 
   <!-- ABOUT -->
   <div class="section">
     <h2>// ABOUT</h2>
-    <p style="max-width:700px;color:#d7cfe9;">
-      A creative studio exploring influencer marketing, Shopify brands, and AI workflows.
-      Inspired by early anime aesthetics, soft Y2K visuals, and internet dream culture.
+    <p style="max-width:700px;color:#e7d9ff;">
+      A soft creative studio exploring influencer marketing, Shopify ideas,
+      and AI workflows. Inspired by anime aesthetics, pastel Y2K visuals,
+      and internet dreamcore culture.
     </p>
   </div>
 
@@ -157,26 +155,26 @@ footer{
     <div class="grid">
 
       <div class="card">
-        <img src="https://images.unsplash.com/photo-1520975922284-3f1c4b4f3a9d">
+        <img src="https://placekitten.com/600/400">
         <div class="card-content">
-          <div class="title">Influencer Marketing</div>
-          <div class="text">Creator campaigns across US & EU markets.</div>
+          <div class="title">🐰 Influencer Marketing</div>
+          <div class="text">Creator campaigns & brand collabs.</div>
         </div>
       </div>
 
       <div class="card">
-        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475">
+        <img src="https://placekitten.com/601/400">
         <div class="card-content">
-          <div class="title">Shopify Studio</div>
-          <div class="text">Testing cute brands & product ideas.</div>
+          <div class="title">🧁 Shopify Studio</div>
+          <div class="text">Cute product experiments & store ideas.</div>
         </div>
       </div>
 
       <div class="card">
-        <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5">
+        <img src="https://placekitten.com/602/400">
         <div class="card-content">
-          <div class="title">AI Automation</div>
-          <div class="text">Building systems for marketing scale.</div>
+          <div class="title">🧠 AI Automation</div>
+          <div class="text">Building marketing systems with AI tools.</div>
         </div>
       </div>
 
@@ -186,13 +184,13 @@ footer{
   <!-- CONTACT -->
   <div class="section">
     <h2>// CONTACT</h2>
-    <p style="color:#d7cfe9;">
-      plata@platacollabs.com
+    <p style="color:#e7d9ff;">
+      💌 plata@platacollabs.com
     </p>
   </div>
 
   <footer>
-    © 2026 PLATA COLLABS — soft y2k creative studio
+    © 2026 PLATA COLLABS — soft y2k creative studio ✨
   </footer>
 
 </div>
