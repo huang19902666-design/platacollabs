@@ -9,52 +9,52 @@
 body{
   margin:0;
   font-family: "Arial", sans-serif;
-  background:#0b0f1a;
-  color:#eaeaea;
+  background: linear-gradient(180deg,#0b0a12,#15102a);
+  color:#fff;
 }
 
-/* 主容器 */
+/* 容器 */
 .container{
   max-width: 1050px;
   margin:auto;
   padding: 60px 25px;
 }
 
-/* 头部 */
+/* HERO */
 .hero{
-  padding: 80px 0;
-  border-bottom: 1px solid rgba(255,255,255,0.1);
+  padding: 90px 0;
+  text-align:left;
 }
 
 h1{
-  font-size: 72px;
-  letter-spacing: -2px;
+  font-size: 70px;
   margin:0;
-  background: linear-gradient(90deg,#7afcff,#fe7aff,#ffd36e);
+  letter-spacing:-2px;
+  background: linear-gradient(90deg,#ff9ad5,#b8a8ff,#7afcff);
   -webkit-background-clip:text;
   -webkit-text-fill-color:transparent;
 }
 
 .sub{
-  margin-top:10px;
-  color:#aaa;
+  margin-top:12px;
+  color:#d7cfe9;
   font-size:16px;
 }
 
-/* 按钮 */
 .btn{
   display:inline-block;
-  margin-top:20px;
+  margin-top:22px;
   padding:10px 18px;
-  border:1px solid #7afcff;
-  color:#7afcff;
+  border-radius:20px;
+  border:1px solid rgba(255,255,255,0.3);
+  background: rgba(255,255,255,0.05);
+  color:#fff;
   text-decoration:none;
-  transition:0.3s;
+  backdrop-filter: blur(6px);
 }
 
 .btn:hover{
-  background:#7afcff;
-  color:#000;
+  background: rgba(255,255,255,0.15);
 }
 
 /* section */
@@ -63,10 +63,9 @@ h1{
 }
 
 h2{
-  font-size:18px;
-  color:#7afcff;
+  font-size:16px;
   letter-spacing:2px;
-  margin-bottom:20px;
+  color:#ff9ad5;
 }
 
 /* 卡片 */
@@ -74,40 +73,43 @@ h2{
   display:grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap:18px;
+  margin-top:20px;
 }
 
 .card{
-  background:rgba(255,255,255,0.03);
-  border:1px solid rgba(255,255,255,0.08);
-  border-radius:10px;
+  border-radius:16px;
   overflow:hidden;
+  background: rgba(255,255,255,0.05);
+  border:1px solid rgba(255,255,255,0.1);
   transition:0.3s;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
 }
 
 .card:hover{
-  transform:translateY(-5px);
-  border-color:#7afcff;
+  transform: translateY(-6px);
+  border-color:#ff9ad5;
 }
 
 .card img{
   width:100%;
-  height:180px;
+  height:200px;
   object-fit:cover;
-  filter: contrast(1.1) saturate(1.2);
+  filter: saturate(1.2) contrast(1.05);
 }
 
 .card-content{
   padding:15px;
 }
 
-.card-title{
+.title{
   font-size:15px;
   margin-bottom:6px;
+  color:#fff;
 }
 
-.card-text{
+.text{
   font-size:13px;
-  color:#aaa;
+  color:#cdbde6;
 }
 
 /* footer */
@@ -116,7 +118,7 @@ footer{
   padding-top:20px;
   border-top:1px solid rgba(255,255,255,0.1);
   font-size:12px;
-  color:#666;
+  color:#a79cc2;
 }
 </style>
 
@@ -135,46 +137,46 @@ footer{
     </div>
 
     <a class="btn" href="mailto:plata@platacollabs.com">
-      CONTACT →
+      ✉ Contact Me
     </a>
   </div>
 
   <!-- ABOUT -->
   <div class="section">
     <h2>// ABOUT</h2>
-    <p style="color:#bbb; max-width:700px;">
-      A personal creative studio exploring influencer marketing, Shopify experiments,
-      and AI-driven digital systems. Inspired by early internet aesthetics and modern brand systems.
+    <p style="max-width:700px;color:#d7cfe9;">
+      A creative studio exploring influencer marketing, Shopify brands, and AI workflows.
+      Inspired by early anime aesthetics, soft Y2K visuals, and internet dream culture.
     </p>
   </div>
 
   <!-- PROJECTS -->
   <div class="section">
-    <h2>// PROJECT LOGS</h2>
+    <h2>// PROJECTS</h2>
 
     <div class="grid">
 
       <div class="card">
-        <img src="https://images.unsplash.com/photo-1535223289827-42f1e9919769">
+        <img src="https://images.unsplash.com/photo-1520975922284-3f1c4b4f3a9d">
         <div class="card-content">
-          <div class="card-title">Influencer Network</div>
-          <div class="card-text">Creator sourcing + campaign systems across US/EU markets.</div>
+          <div class="title">Influencer Marketing</div>
+          <div class="text">Creator campaigns across US & EU markets.</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475">
+        <div class="card-content">
+          <div class="title">Shopify Studio</div>
+          <div class="text">Testing cute brands & product ideas.</div>
         </div>
       </div>
 
       <div class="card">
         <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5">
         <div class="card-content">
-          <div class="card-title">Shopify Experiments</div>
-          <div class="card-text">Testing product ideas and conversion funnels.</div>
-        </div>
-      </div>
-
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1526378722484-bd91ca387e72">
-        <div class="card-content">
-          <div class="card-title">AI Systems</div>
-          <div class="card-text">Automation workflows for marketing scaling.</div>
+          <div class="title">AI Automation</div>
+          <div class="text">Building systems for marketing scale.</div>
         </div>
       </div>
 
@@ -184,13 +186,13 @@ footer{
   <!-- CONTACT -->
   <div class="section">
     <h2>// CONTACT</h2>
-    <p style="color:#bbb;">
+    <p style="color:#d7cfe9;">
       plata@platacollabs.com
     </p>
   </div>
 
   <footer>
-    © 2026 PLATA COLLABS — experimental studio log
+    © 2026 PLATA COLLABS — soft y2k creative studio
   </footer>
 
 </div>
