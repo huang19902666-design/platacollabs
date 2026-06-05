@@ -11,9 +11,10 @@ body{
   font-family: Arial, sans-serif;
   background: linear-gradient(180deg,#120a1f,#1a1233);
   color:#fff;
+  overflow-x:hidden;
 }
 
-/* 动效 */
+/* floating animation */
 @keyframes float {
   0% { transform: translateY(0px); }
   50% { transform: translateY(-10px); }
@@ -96,16 +97,14 @@ h2{
   animation-play-state: paused;
 }
 
-/* 图片 */
-.card img{
+/* SVG容器 */
+.card svg{
   width:100%;
   height:200px;
-  object-fit:contain;
-  padding:12px;
-  background: rgba(255,255,255,0.03);
+  display:block;
 }
 
-/* 内容 */
+/* content */
 .card-content{
   padding:14px;
 }
@@ -165,27 +164,77 @@ footer{
 
     <div class="grid">
 
-      <!-- Influencer -->
+      <!-- 1 Influencer -->
       <div class="card">
-        <img src="https://undraw.co/api/illustrations/social_media.svg">
+        <svg viewBox="0 0 600 400">
+          <defs>
+            <linearGradient id="g1" x1="0" x2="1">
+              <stop offset="0%" stop-color="#ff9ad5"/>
+              <stop offset="100%" stop-color="#a5a6ff"/>
+            </linearGradient>
+          </defs>
+
+          <rect width="600" height="400" fill="url(#g1)"/>
+          <circle cx="180" cy="200" r="90" fill="#fff" opacity="0.8"/>
+          <circle cx="380" cy="160" r="70" fill="#ffd6f0" opacity="0.8"/>
+          <circle cx="420" cy="260" r="40" fill="#7afcff" opacity="0.6"/>
+
+          <!-- 简化“少女头像感” -->
+          <circle cx="240" cy="190" r="35" fill="#2b1b3a"/>
+          <circle cx="240" cy="180" r="18" fill="#fff"/>
+
+          <text x="50%" y="85%" text-anchor="middle" fill="#222" font-size="22">
+            Creator World
+          </text>
+        </svg>
+
         <div class="card-content">
           <div class="title">🌸 Influencer Marketing</div>
-          <div class="text">Creator sourcing, outreach, campaign execution.</div>
+          <div class="text">Creator sourcing, outreach & campaign execution.</div>
         </div>
       </div>
 
-      <!-- Shopify -->
+      <!-- 2 Shopify -->
       <div class="card">
-        <img src="https://undraw.co/api/illustrations/online_shopping.svg">
+        <svg viewBox="0 0 600 400">
+          <rect width="600" height="400" fill="#d6f0ff"/>
+          <circle cx="200" cy="220" r="100" fill="#fff" opacity="0.9"/>
+          <circle cx="420" cy="170" r="80" fill="#ffd6f0" opacity="0.9"/>
+
+          <rect x="240" y="150" width="120" height="80" rx="10" fill="#a5a6ff"/>
+          <rect x="260" y="170" width="80" height="10" fill="#fff"/>
+
+          <text x="50%" y="85%" text-anchor="middle" fill="#222" font-size="22">
+            Shop Space
+          </text>
+        </svg>
+
         <div class="card-content">
           <div class="title">🧁 Shopify & E-commerce</div>
           <div class="text">Store building, product testing & conversion systems.</div>
         </div>
       </div>
 
-      <!-- AI -->
+      <!-- 3 AI -->
       <div class="card">
-        <img src="https://undraw.co/api/illustrations/artificial_intelligence.svg">
+        <svg viewBox="0 0 600 400">
+          <rect width="600" height="400" fill="#e6d6ff"/>
+          <circle cx="220" cy="200" r="110" fill="#fff" opacity="0.9"/>
+          <circle cx="420" cy="200" r="70" fill="#7afcff" opacity="0.7"/>
+
+          <!-- AI节点 -->
+          <circle cx="300" cy="160" r="10" fill="#ff9ad5"/>
+          <circle cx="260" cy="220" r="10" fill="#a5a6ff"/>
+          <circle cx="340" cy="240" r="10" fill="#ff9ad5"/>
+
+          <line x1="300" y1="160" x2="260" y2="220" stroke="#333"/>
+          <line x1="300" y1="160" x2="340" y2="240" stroke="#333"/>
+
+          <text x="50%" y="85%" text-anchor="middle" fill="#222" font-size="22">
+            AI Flow
+          </text>
+        </svg>
+
         <div class="card-content">
           <div class="title">🧠 AI & Automation</div>
           <div class="text">Marketing workflows & automation systems.</div>
