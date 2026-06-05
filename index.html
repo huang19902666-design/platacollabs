@@ -14,33 +14,24 @@ body{
   overflow-x:hidden;
 }
 
-/* 🌟 粒子背景 */
-.particle{
-  position:fixed;
-  width:3px;
-  height:3px;
-  background:white;
-  border-radius:50%;
-  opacity:0.6;
-  animation: floatUp linear infinite;
-}
-
-@keyframes floatUp{
-  0%{ transform:translateY(100vh); opacity:0; }
-  20%{ opacity:1; }
-  100%{ transform:translateY(-10vh); opacity:0; }
-}
-
 /* glow */
 .glow{
   position:fixed;
   width:600px;
   height:600px;
   background: radial-gradient(circle,#ff9ad5,transparent 60%);
-  filter:blur(80px);
+  filter:blur(90px);
   top:-200px;
   left:-200px;
   opacity:0.4;
+  pointer-events:none;
+}
+
+/* floating animation */
+@keyframes float{
+  0%{transform:translateY(0px);}
+  50%{transform:translateY(-10px);}
+  100%{transform:translateY(0px);}
 }
 
 .container{
@@ -51,7 +42,7 @@ body{
 
 /* HERO */
 .hero{
-  padding:90px 0;
+  padding:90px 0 60px;
 }
 
 h1{
@@ -104,19 +95,19 @@ h2{
   background: rgba(255,255,255,0.06);
   border:1px solid rgba(255,255,255,0.12);
   transition:0.4s;
-  transform: translateY(0);
+  animation: float 6s ease-in-out infinite;
 }
 
 .card:hover{
-  transform: translateY(-10px);
+  transform:translateY(-10px);
   border-color:#ff9ad5;
 }
 
-/* 🌸 插画图（AI图位置） */
+/* image */
 .art{
   height:240px;
-  position:relative;
   overflow:hidden;
+  position:relative;
 }
 
 .art img{
@@ -124,13 +115,14 @@ h2{
   height:100%;
   object-fit:cover;
   filter:saturate(1.2) contrast(1.05);
+  transform:scale(1.02);
 }
 
-/* overlay Y2K光效 */
+/* overlay Y2K光 */
 .overlay{
   position:absolute;
   inset:0;
-  background: radial-gradient(circle at top,#ff9ad533,#7afcff22,#00000055);
+  background: radial-gradient(circle at top, rgba(255,154,213,0.25), rgba(122,252,255,0.15), rgba(0,0,0,0.4));
 }
 
 /* content */
@@ -157,79 +149,84 @@ footer{
 
 <div class="container">
 
+  <!-- HERO -->
   <div class="hero">
     <h1>PLATA COLLABS</h1>
+
     <div class="sub">
-      🌸 Influencer Marketing · Creator Partnerships · Shopify · AI Automation
+      🌸 Influencer Marketing · Creator Partnerships · Shopify Growth · AI Automation
     </div>
-    <a class="btn" href="mailto:plata@platacollabs.com">💌 Contact</a>
+
+    <a class="btn" href="mailto:plata@platacollabs.com">
+      💌 Contact Collaboration
+    </a>
   </div>
 
+  <!-- ABOUT -->
+  <div class="section">
+    <h2>// ABOUT</h2>
+    <p style="max-width:750px;color:#e6d9ff;line-height:1.7;">
+      Creator marketing studio focused on global influencer campaigns,
+      Shopify brand building, and AI-driven automation systems.
+    </p>
+  </div>
+
+  <!-- SERVICES -->
   <div class="section">
     <h2>// SERVICES</h2>
 
     <div class="grid">
 
-      <!-- 🌸 GIRL ROOM -->
+      <!-- 🌸 GIRL -->
       <div class="card">
         <div class="art">
-          <img src="./images/girl-room.png">
+          <img src="./girl-room.png" alt="girl room">
           <div class="overlay"></div>
         </div>
         <div class="card-content">
           <div class="title">🌸 Influencer Marketing</div>
-          <div class="text">Creator campaigns in dreamy Y2K aesthetic rooms.</div>
+          <div class="text">Creator campaigns & influencer partnerships.</div>
         </div>
       </div>
 
-      <!-- 🐶 CAFE DOG -->
+      <!-- 🐶 DOG CAFE -->
       <div class="card">
         <div class="art">
-          <img src="./images/dog-cafe.png">
+          <img src="./dog-cafe.png" alt="dog cafe">
           <div class="overlay"></div>
         </div>
         <div class="card-content">
           <div class="title">🧁 Shopify & E-commerce</div>
-          <div class="text">Cute café & shopping street brand world.</div>
+          <div class="text">Store creation, product testing & conversion growth.</div>
         </div>
       </div>
 
-      <!-- 🍰 DREAM LAB -->
+      <!-- 🍰 AI LAB -->
       <div class="card">
         <div class="art">
-          <img src="./images/sweet-lab.png">
+          <img src="./sweet-lab.png" alt="ai lab">
           <div class="overlay"></div>
         </div>
         <div class="card-content">
           <div class="title">🧠 AI Automation</div>
-          <div class="text">Dreamlike AI lab with stars & neon systems.</div>
+          <div class="text">Marketing workflows & AI growth systems.</div>
         </div>
       </div>
 
     </div>
   </div>
 
+  <!-- CONTACT -->
   <div class="section">
     <h2>// CONTACT</h2>
     <p style="color:#e6d9ff;">💌 plata@platacollabs.com</p>
   </div>
 
   <footer>
-    © 2026 Plata Collabs ✨
+    © 2026 Plata Collabs ✨ Creator Marketing Studio
   </footer>
 
 </div>
-
-<script>
-/* 🌟 粒子系统 */
-for(let i=0;i<40;i++){
-  let p=document.createElement("div");
-  p.className="particle";
-  p.style.left=Math.random()*100+"vw";
-  p.style.animationDuration=(3+Math.random()*5)+"s";
-  document.body.appendChild(p);
-}
-</script>
 
 </body>
 </html>
